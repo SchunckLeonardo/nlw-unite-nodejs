@@ -2,8 +2,26 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summit",
+  "title": "The lowest Event",
   "details": "The biggest event of South America",
   "slug": "unite-summit",
-  "maximunAttendees": 12500
+  "maximunAttendees": 1
 }
+
+###
+
+POST http://localhost:3333/events/9118411f-bb0f-415a-8c92-3b77c70a4551/attendees
+Content-Type: application/json
+
+{
+  "name": "Leonardo Schunck Rainha",
+  "email": "leonardorainha231@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/6260d34d-61d7-45b9-b251-6c1ba8566ab5
+
+###
+
+GET http://localhost:3333/attendees/1
